@@ -14,3 +14,12 @@ else:
         Renda = Renda -1000.00
         if Renda <= 1500.00:
             imposto += Renda * 0.18
+            print(f"R$ {imposto:.2f}")
+        
+        else:
+            imposto += 1500.00 * 0.18
+            Renda = Renda - 1500.00
+            if Renda > 0.00:
+                imposto += Renda * 0.28
+                print(f"R$ {imposto:.2f}")
+                    
